@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="postLoginPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="draft.PostLoginController">
+   <children>
+      <Separator layoutX="133.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="8.0" />
+      <Pane layoutX="135.0" prefHeight="400.0" prefWidth="464.0">
+         <children>
+            <Button fx:id="closeButton" layoutX="391.0" layoutY="359.0" mnemonicParsing="false" onAction="#closeWindow" text="Close" />
+         </children>
+      </Pane>
+      <Hyperlink fx:id="updateLogin" layoutX="3.0" layoutY="47.0" onAction="#loginView" prefHeight="25.0" prefWidth="129.0" text="Update login" />
+      <Hyperlink fx:id="updatePersonal" layoutX="3.0" layoutY="89.0" onAction="#personalView" prefHeight="25.0" prefWidth="129.0" text="Update personal" />
+      <Hyperlink fx:id="updateWallet" layoutX="3.0" layoutY="128.0" onAction="#walletView" prefHeight="25.0" prefWidth="129.0" text="Wallet" />
+   </children>
+</AnchorPane>

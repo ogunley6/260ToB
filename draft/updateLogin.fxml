@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="updateLoginPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="draft.UpdateLoginController">
+   <children>
+      <Separator layoutX="133.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="8.0" />
+      <Pane layoutX="135.0" prefHeight="400.0" prefWidth="464.0">
+         <children>
+            <TextField layoutX="81.0" layoutY="61.0" promptText="Email address" />
+            <Button fx:id="cancelLoginUpdateButton" layoutX="367.0" layoutY="342.0" mnemonicParsing="false" onAction="#cancelLoginUpdate" text="Cancel" />
+            <Button layoutX="295.0" layoutY="342.0" mnemonicParsing="false" text="Update" />
+            <PasswordField layoutX="81.0" layoutY="173.0" promptText="New password" />
+            <PasswordField layoutX="81.0" layoutY="229.0" promptText="Confirm new password" />
+            <PasswordField layoutX="81.0" layoutY="117.0" promptText="Current password" />
+         </children>
+      </Pane>
+      <Hyperlink fx:id="updateLogin" layoutX="3.0" layoutY="47.0" prefHeight="25.0" prefWidth="129.0" text="Update login" />
+      <Hyperlink fx:id="updatePersonal" layoutX="3.0" layoutY="89.0" prefHeight="25.0" prefWidth="129.0" text="Update personal" />
+      <Hyperlink fx:id="updateWallet" layoutX="3.0" layoutY="128.0" prefHeight="25.0" prefWidth="129.0" text="Wallet" />
+   </children>
+</AnchorPane>

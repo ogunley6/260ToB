@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="624.0" prefWidth="1086.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="draft.CustomerTable1Controller">
+   <children>
+      <Button layoutX="690.0" layoutY="576.0" mnemonicParsing="false" onAction="#registerUser" text="New Membership" />
+      <TextField fx:id="idField" layoutX="9.0" layoutY="112.0" prefHeight="27.0" prefWidth="234.0" promptText="Id" />
+      <ComboBox fx:id="titleBox" layoutX="9.0" layoutY="152.0" prefHeight="27.0" prefWidth="234.0" />
+      <TextField fx:id="fnField" layoutX="10.0" layoutY="189.0" prefHeight="27.0" prefWidth="234.0" promptText="First Name" />
+      <TextField fx:id="snField" layoutX="10.0" layoutY="231.0" prefHeight="27.0" prefWidth="234.0" promptText="Surname" />
+      <TextField fx:id="emailField" layoutX="10.0" layoutY="315.0" prefHeight="27.0" prefWidth="234.0" promptText="Email" />
+      <TextField fx:id="contactNoField" layoutX="10.0" layoutY="359.0" prefHeight="27.0" prefWidth="234.0" promptText="Contact Number" />
+      <TextField fx:id="doorNoField" layoutX="10.0" layoutY="403.0" prefHeight="27.0" prefWidth="234.0" promptText="Door Number" />
+      <TextField fx:id="streetField" layoutX="10.0" layoutY="443.0" prefHeight="27.0" prefWidth="234.0" promptText="Street" />
+      <TextField fx:id="postcodeField" layoutX="10.0" layoutY="486.0" prefHeight="27.0" prefWidth="234.0" promptText="Postcode" />
+      <Button fx:id="delete" layoutX="13.0" layoutY="576.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="73.0" text="Delete" />
+      <Button fx:id="loadDataButton" layoutX="427.0" layoutY="576.0" mnemonicParsing="false" onAction="#loadData" prefHeight="27.0" prefWidth="73.0" text="Refresh" />
+      <ScrollPane fx:id="tablescroll" layoutX="532.0" layoutY="4.0" prefHeight="543.0" prefWidth="483.0">
+         <content>
+            <TableView fx:id="table" prefHeight="563.0" prefWidth="1023.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title" />
+                  <TableColumn fx:id="fnColumn" prefWidth="170.0" text="First Name" />
+                  <TableColumn fx:id="snColumn" prefWidth="170.0" text="Surname" />
+                  <TableColumn fx:id="dobColumn" prefWidth="104.0" text="Date of Birth" />
+                  <TableColumn fx:id="emailColumn" prefWidth="250.0" text="Email" />
+                  <TableColumn fx:id="phoneColumn" prefWidth="111.0" text="Contact Number" />
+                  <TableColumn fx:id="doorNoColumn" prefWidth="68.0" text="Door" />
+                  <TableColumn fx:id="streetColumn" minWidth="0.0" prefWidth="170.0" text="Street" />
+                  <TableColumn fx:id="postcodeColumn" minWidth="103.0" prefWidth="0.0" text="Postcode" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="dobField" layoutX="10.0" layoutY="274.0" prefHeight="27.0" prefWidth="234.0" promptText="Date of Birth" />
+      <ScrollPane layoutX="279.0" layoutY="130.0" prefHeight="373.0" prefWidth="220.0">
+         <content>
+            <ListView fx:id="customerList" prefHeight="409.0" prefWidth="202.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="save" layoutX="125.0" layoutY="576.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="27.0" prefWidth="73.0" text="Update" />
+      <TextField fx:id="searchBox" layoutX="40.0" layoutY="32.0" onKeyReleased="#search" prefHeight="28.0" prefWidth="213.0" promptText="Search by ID ONLY" />
+   </children>
+</AnchorPane>
