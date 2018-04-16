@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dadee5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tourofbritain.HomeController">
+   <children>
+      <Label layoutX="194.0" layoutY="44.0" prefHeight="17.0" prefWidth="212.0" text="Tour of Britain" textAlignment="CENTER">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="149.0" layoutX="56.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../icons8-bus-100.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="employee" layoutX="177.0" layoutY="150.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="247.0" text="Employee Login" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="customer" layoutX="177.0" layoutY="225.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="247.0" text="Customer Login" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="register" layoutX="177.0" layoutY="300.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="247.0" text="Register" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

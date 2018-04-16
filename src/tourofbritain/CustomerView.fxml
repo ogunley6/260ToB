@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="delete" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dadee5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tourofbritain.CustomerViewController">
+   <children>
+      <TextField fx:id="postcode" layoutX="344.0" layoutY="307.0" prefHeight="27.0" prefWidth="234.0" promptText="Postcode" />
+      <TextField fx:id="street" layoutX="344.0" layoutY="264.0" prefHeight="27.0" prefWidth="234.0" promptText="Street" />
+      <TextField fx:id="doorNo" layoutX="344.0" layoutY="224.0" prefHeight="27.0" prefWidth="234.0" promptText="Door Number" />
+      <TextField fx:id="contactNo" layoutX="43.0" layoutY="307.0" prefHeight="27.0" prefWidth="234.0" promptText="Contact Number" />
+      <TextField fx:id="email" layoutX="43.0" layoutY="263.0" prefHeight="27.0" prefWidth="234.0" promptText="Email" />
+      <TextField fx:id="dob" layoutX="43.0" layoutY="222.0" prefHeight="27.0" prefWidth="234.0" promptText="Date of Birth" />
+      <TextField fx:id="surname" layoutX="344.0" layoutY="185.0" prefHeight="27.0" prefWidth="234.0" promptText="Surname" />
+      <TextField fx:id="firstname" layoutX="344.0" layoutY="142.0" prefHeight="27.0" prefWidth="234.0" promptText="First Name" />
+      <ComboBox fx:id="title" layoutX="344.0" layoutY="96.0" prefHeight="27.0" prefWidth="234.0" />
+      <TextField fx:id="id" layoutX="119.0" layoutY="14.0" prefHeight="27.0" prefWidth="363.0" promptText="Id" />
+      <TextField fx:id="username" layoutX="43.0" layoutY="138.0" prefHeight="27.0" prefWidth="234.0" promptText="Username" />
+      <Button fx:id="update" layoutX="59.0" layoutY="359.0" mnemonicParsing="false" text="Update" />
+      <Button fx:id="cancel" layoutX="500.0" layoutY="359.0" mnemonicParsing="false" text="Cancel" />
+      <PasswordField fx:id="password" layoutX="43.0" layoutY="178.0" prefHeight="27.0" prefWidth="234.0" promptText="Password" />
+      <Button fx:id="deleteMember" layoutX="250.0" layoutY="359.0" mnemonicParsing="false" text="Cancel Membership" />
+      <ComboBox fx:id="membership" layoutX="43.0" layoutY="96.0" prefHeight="27.0" prefWidth="234.0" />
+      <Label layoutX="14.0" layoutY="50.0" text="To edit details enter your username and password" />
+      <Label layoutX="12.0" layoutY="67.0" text="When you enter your password press enter on your keyboard" />
+   </children>
+</AnchorPane>
